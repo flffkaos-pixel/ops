@@ -84,7 +84,7 @@
                       "name":  "SEO Toolkit",
                       "url":  "https://seogeo-tools.pages.dev",
                       "sitemap":  "https://seogeo-tools.pages.dev/sitemap.xml",
-                      "rss":  "",
+                      "rss":  "https://seogeo-tools.pages.dev/rss.xml",
                       "repo":  "seo-geo-tools",
                       "lang":  "en"
                   },
