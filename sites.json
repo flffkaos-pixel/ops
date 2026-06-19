@@ -1,108 +1,108 @@
-{
-  "sites": [
-    {
-      "name": "Free AI",
-      "url": "https://freeaisite.pages.dev",
-      "sitemap": "https://freeaisite.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "free-ai-",
-      "lang": "ko"
-    },
-    {
-      "name": "The Agency",
-      "url": "https://autoagency.pages.dev",
-      "sitemap": "https://autoagency.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "agency-agents",
-      "lang": "en"
-    },
-    {
-      "name": "MCP Academy",
-      "url": "https://mcpbeginner.pages.dev",
-      "sitemap": "https://mcpbeginner.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "mcp",
-      "lang": "en"
-    },
-    {
-      "name": "AI Engineering",
-      "url": "https://ai-engineering-beginner.pages.dev",
-      "sitemap": "https://ai-engineering-beginner.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "ai-engin",
-      "lang": "en"
-    },
-    {
-      "name": "온라인 담타",
-      "url": "https://onlinedamta.pages.dev",
-      "sitemap": "https://onlinedamta.pages.dev/sitemap.xml",
-      "rss": "https://onlinedamta.pages.dev/rss.xml",
-      "repo": "damta",
-      "lang": "ko"
-    },
-    {
-      "name": "펫트래블",
-      "url": "https://animal-trip.pages.dev",
-      "sitemap": "https://animal-trip.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "Animal-Trip",
-      "lang": "ko"
-    },
-    {
-      "name": "Four Pillars",
-      "url": "https://korean-saju.pages.dev",
-      "sitemap": "https://korean-saju.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "saju",
-      "lang": "en"
-    },
-    {
-      "name": "GEO·SEO·AEO",
-      "url": "https://geoptmize.pages.dev",
-      "sitemap": "https://geoptmize.pages.dev/sitemap.xml",
-      "rss": "https://geoptmize.pages.dev/rss.xml",
-      "repo": "geoaeoseo",
-      "lang": "ko"
-    },
-    {
-      "name": "감정쓰레기통",
-      "url": "https://emotionbin.pages.dev",
-      "sitemap": "https://emotionbin.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "emotionbin",
-      "lang": "ko"
-    },
-    {
-      "name": "HealSense",
-      "url": "https://symptomcheck.pages.dev",
-      "sitemap": "https://symptomcheck.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "SelfCheck",
-      "lang": "ko"
-    },
-    {
-      "name": "SEO Toolkit",
-      "url": "https://seogeo-tools.pages.dev",
-      "sitemap": "https://seogeo-tools.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "",
-      "lang": "en"
-    },
-    {
-      "name": "Everyone's Design",
-      "url": "https://everyonesdesign.pages.dev",
-      "sitemap": "https://everyonesdesign.pages.dev/sitemap.xml",
-      "rss": "https://everyonesdesign.pages.dev/feed.xml",
-      "repo": "",
-      "lang": "en"
-    },
-    {
-      "name": "Free Utilities",
-      "url": "https://freeutilities.pages.dev",
-      "sitemap": "https://freeutilities.pages.dev/sitemap.xml",
-      "rss": "",
-      "repo": "utilities",
-      "lang": "ko"
-    }
-  ]
+﻿{
+    "sites":  [
+                  {
+                      "name":  "Free AI",
+                      "url":  "https://freeaisite.pages.dev",
+                      "sitemap":  "https://freeaisite.pages.dev/sitemap.xml",
+                      "rss":  "https://freeaisite.pages.dev/rss.xml",
+                      "repo":  "free-ai-",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "The Agency",
+                      "url":  "https://autoagency.pages.dev",
+                      "sitemap":  "https://autoagency.pages.dev/sitemap.xml",
+                      "rss":  "https://autoagency.pages.dev/rss.xml",
+                      "repo":  "agency-agents",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "MCP Academy",
+                      "url":  "https://mcpbeginner.pages.dev",
+                      "sitemap":  "https://mcpbeginner.pages.dev/sitemap.xml",
+                      "rss":  "https://mcpbeginner.pages.dev/rss.xml",
+                      "repo":  "mcp",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "AI Engineering",
+                      "url":  "https://ai-engineering-beginner.pages.dev",
+                      "sitemap":  "https://ai-engineering-beginner.pages.dev/sitemap.xml",
+                      "rss":  "https://ai-engineering-beginner.pages.dev/rss.xml",
+                      "repo":  "ai-engin",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "온라인 담타",
+                      "url":  "https://onlinedamta.pages.dev",
+                      "sitemap":  "https://onlinedamta.pages.dev/sitemap.xml",
+                      "rss":  "https://onlinedamta.pages.dev/rss.xml",
+                      "repo":  "damta",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "펫트래블",
+                      "url":  "https://animal-trip.pages.dev",
+                      "sitemap":  "https://animal-trip.pages.dev/sitemap.xml",
+                      "rss":  "https://animal-trip.pages.dev/rss.xml",
+                      "repo":  "Animal-Trip",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "Four Pillars",
+                      "url":  "https://korean-saju.pages.dev",
+                      "sitemap":  "https://korean-saju.pages.dev/sitemap.xml",
+                      "rss":  "https://korean-saju.pages.dev/rss.xml",
+                      "repo":  "saju",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "GEO·SEO·AEO",
+                      "url":  "https://geoptmize.pages.dev",
+                      "sitemap":  "https://geoptmize.pages.dev/sitemap.xml",
+                      "rss":  "https://geoptmize.pages.dev/rss.xml",
+                      "repo":  "geoaeoseo",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "감정쓰레기통",
+                      "url":  "https://emotionbin.pages.dev",
+                      "sitemap":  "https://emotionbin.pages.dev/sitemap.xml",
+                      "rss":  "https://emotionbin.pages.dev/rss.xml",
+                      "repo":  "emotionbin",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "HealSense",
+                      "url":  "https://symptomcheck.pages.dev",
+                      "sitemap":  "https://symptomcheck.pages.dev/sitemap.xml",
+                      "rss":  "https://symptomcheck.pages.dev/rss.xml",
+                      "repo":  "SelfCheck",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "SEO Toolkit",
+                      "url":  "https://seogeo-tools.pages.dev",
+                      "sitemap":  "https://seogeo-tools.pages.dev/sitemap.xml",
+                      "rss":  "",
+                      "repo":  "seo-geo-tools",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "Everyone\u0027s Design",
+                      "url":  "https://everyonesdesign.pages.dev",
+                      "sitemap":  "https://everyonesdesign.pages.dev/sitemap.xml",
+                      "rss":  "https://everyonesdesign.pages.dev/rss.xml",
+                      "repo":  "everyone-s-design",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "Free Utilities",
+                      "url":  "https://freeutilities.pages.dev",
+                      "sitemap":  "https://freeutilities.pages.dev/sitemap.xml",
+                      "rss":  "https://freeutilities.pages.dev/rss.xml",
+                      "repo":  "utilities",
+                      "lang":  "ko"
+                  }
+              ]
 }
