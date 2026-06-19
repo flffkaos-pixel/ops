@@ -1,0 +1,19 @@
+name: IndexNow Ping
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ping all sites to IndexNow / Bing / Naver
+        id: ping
+        run: node scripts/indexnow-ping.js
+      - name: Summary
+        run: |
+          echo "✅ ${{ steps.ping.outputs.total_sites }} sites pinged"
+          echo "📄 ${{ steps.ping.outputs.total_urls }} URLs submitted"

@@ -1,0 +1,19 @@
+name: RSS Monitor
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check RSS feeds and create issues
+        id: rss
+        run: node scripts/rss-check.js
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Summary
+        run: echo "✅ ${{ steps.rss.outputs.checked }} RSS feeds checked"
