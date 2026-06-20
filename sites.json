@@ -151,6 +151,22 @@
                       "repo":  "",
                       "url":  "https://ailaboutkorea.blogspot.com",
                       "sitemap":  "https://ailaboutkorea.blogspot.com/sitemap.xml"
+                  },
+                  {
+                      "rss":  "https://papapapago.blogspot.com/feeds/posts/default",
+                      "name":  "Papapapago",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://papapapago.blogspot.com",
+                      "sitemap":  "https://papapapago.blogspot.com/sitemap.xml"
+                  },
+                  {
+                      "rss":  "https://istor-y.tistory.com/rss",
+                      "name":  "Istory",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://istor-y.tistory.com",
+                      "sitemap":  "https://istor-y.tistory.com/sitemap.xml"
                   }
               ]
 }
