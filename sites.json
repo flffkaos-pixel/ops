@@ -103,6 +103,54 @@
                       "rss":  "https://freeutilities.pages.dev/rss.xml",
                       "repo":  "utilities",
                       "lang":  "ko"
+                  },
+                  {
+                      "rss":  "https://health-library-100.blogspot.com/feeds/posts/default",
+                      "name":  "Health Library",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://health-library-100.blogspot.com",
+                      "sitemap":  "https://health-library-100.blogspot.com/sitemap.xml"
+                  },
+                  {
+                      "rss":  "https://sciencegreatlibrary.blogspot.com/feeds/posts/default",
+                      "name":  "Science Great Library",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://sciencegreatlibrary.blogspot.com",
+                      "sitemap":  "https://sciencegreatlibrary.blogspot.com/sitemap.xml"
+                  },
+                  {
+                      "rss":  "https://crazy44travel.blogspot.com/feeds/posts/default",
+                      "name":  "Crazy Travel",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://crazy44travel.blogspot.com",
+                      "sitemap":  "https://crazy44travel.blogspot.com/sitemap.xml"
+                  },
+                  {
+                      "rss":  "https://askmeanythings.tistory.com/rss",
+                      "name":  "Ask Me Anything",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://askmeanythings.tistory.com",
+                      "sitemap":  "https://askmeanythings.tistory.com/sitemap.xml"
+                  },
+                  {
+                      "rss":  "https://mmmmc.tistory.com/rss",
+                      "name":  "Mmmmc",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://mmmmc.tistory.com",
+                      "sitemap":  "https://mmmmc.tistory.com/sitemap.xml"
+                  },
+                  {
+                      "rss":  "https://ailaboutkorea.blogspot.com/feeds/posts/default",
+                      "name":  "All About Korea",
+                      "lang":  "en",
+                      "repo":  "",
+                      "url":  "https://ailaboutkorea.blogspot.com",
+                      "sitemap":  "https://ailaboutkorea.blogspot.com/sitemap.xml"
                   }
               ]
 }
