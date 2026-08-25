@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Ping all sites to IndexNow / Bing / Naver
+      - name: Ping all sites to IndexNow
         id: ping
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: node scripts/indexnow-ping.js
       - name: Summary
         run: |
