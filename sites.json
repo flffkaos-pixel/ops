@@ -167,6 +167,77 @@
                       "repo":  "",
                       "url":  "https://istor-y.tistory.com",
                       "sitemap":  "https://istor-y.tistory.com/sitemap.xml"
+                  },
+                  {
+                      "name":  "K-Community",
+                      "url":  "https://flffkaos-pixel.github.io/K-community/",
+                      "sitemap":  "https://flffkaos-pixel.github.io/K-community/sitemap.xml",
+                      "rss":  "https://flffkaos-pixel.github.io/K-community/rss.xml",
+                      "repo":  "K-community",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "FitCheck",
+                      "url":  "https://flffkaos-pixel.github.io/fitcheck-web/",
+                      "sitemap":  "https://flffkaos-pixel.github.io/fitcheck-web/sitemap.xml",
+                      "repo":  "fitcheck-web",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "DevTools Platform",
+                      "url":  "https://flffkaos-pixel.github.io/dev-tools-platform/",
+                      "sitemap":  "https://flffkaos-pixel.github.io/dev-tools-platform/sitemap.xml",
+                      "repo":  "dev-tools-platform",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "Learning Hub",
+                      "url":  "https://flffkaos-pixel.github.io/learning-hub/",
+                      "sitemap":  "https://flffkaos-pixel.github.io/learning-hub/sitemap.xml",
+                      "repo":  "learning-hub",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "BizFlow",
+                      "url":  "https://bizflow-landing.vercel.app/",
+                      "sitemap":  "https://bizflow-landing.vercel.app/sitemap.xml",
+                      "repo":  "BizFlow-BizFlow",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "TRACE//LAB",
+                      "url":  "https://tracelab-five.vercel.app/",
+                      "sitemap":  "https://tracelab-five.vercel.app/sitemap.xml",
+                      "repo":  "boan",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "Visual Gallery",
+                      "url":  "https://web-art-alpha.vercel.app/",
+                      "sitemap":  "https://web-art-alpha.vercel.app/sitemap.xml",
+                      "repo":  "web-art",
+                      "lang":  "en"
+                  },
+                  {
+                      "name":  "AI News Hub",
+                      "url":  "https://ai-newshub-psi.vercel.app/",
+                      "sitemap":  "https://ai-newshub-psi.vercel.app/sitemap.xml",
+                      "repo":  "aisite",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "Samchang Fishery",
+                      "url":  "https://flffkaos-pixel.github.io/3chang-samchang/",
+                      "sitemap":  "https://flffkaos-pixel.github.io/3chang-samchang/sitemap.xml",
+                      "repo":  "3chang-samchang",
+                      "lang":  "ko"
+                  },
+                  {
+                      "name":  "AI Lab Blog",
+                      "url":  "https://flffkaos-pixel.github.io/ai-lab-free-services/",
+                      "sitemap":  "https://flffkaos-pixel.github.io/ai-lab-free-services/sitemap.xml",
+                      "repo":  "ai-lab-free-services",
+                      "lang":  "ko"
                   }
               ]
 }

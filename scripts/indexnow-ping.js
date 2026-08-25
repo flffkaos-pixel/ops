@@ -3,13 +3,16 @@ const sites = require('../sites.json').sites;
 
 const INDEXNOW_KEY = process.env.INDEXNOW_KEY || '';
 
+// ponytail: Bing sitemap ping (410 Gone) and Naver IndexNow (422) removed —
+// IndexNow API covers Bing/Yandex/Seznam/Naver(지원 시). Re-add direct APIs if they return.
 async function fetchSitemap(url) {
   return new Promise((resolve, reject) => {
     https.get(url, res => {
       let data = '';
       res.on('data', c => data += c);
+      res.on('error', () => resolve(''));
       res.on('end', () => resolve(data));
-    }).on('error', reject);
+    }).on('error', e => reject(e));
   });
 }
 
@@ -22,73 +25,50 @@ function extractUrls(xml) {
 }
 
 async function pingIndexNow(urls, siteUrl) {
-  const body = JSON.stringify({
-    host: new URL(siteUrl).host,
-    key: INDEXNOW_KEY,
-    keyLocation: `${siteUrl}/${INDEXNOW_KEY}.txt`,
-    urlList: urls.slice(0, 10000)
-  });
-
-  return new Promise((resolve, reject) => {
+  return new Promise(resolve => {
+    if (!INDEXNOW_KEY) return resolve({ status: 0, body: 'no key' });
+    const body = JSON.stringify({
+      host: new URL(siteUrl).host,
+      key: INDEXNOW_KEY,
+      keyLocation: `${siteUrl}${siteUrl.endsWith('/') ? '' : '/'}${INDEXNOW_KEY}.txt`,
+      urlList: urls.slice(0, 10000)
+    });
     const req = https.request({
       hostname: 'api.indexnow.org',
       path: '/indexnow',
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Content-Length': body.length }
+      headers: { 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': Buffer.byteLength(body) },
+      timeout: 30000
     }, res => {
       let data = '';
       res.on('data', c => data += c);
       res.on('end', () => resolve({ status: res.statusCode, body: data }));
     });
-    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); resolve({ status: 0, body: 'timeout' }); });
+    req.on('error', e => resolve({ status: 0, body: e.message }));
     req.write(body);
     req.end();
   });
 }
 
-async function pingBing(siteUrl) {
-  const sitemap = siteUrl + '/sitemap.xml';
-  const url = `https://www.bing.com/ping?sitemap=${encodeURIComponent(sitemap)}`;
-  return new Promise((resolve, reject) => {
-    https.get(url, res => resolve({ status: res.statusCode }));
-  });
-}
-
-async function pingNaver(siteUrl) {
-  // Naver IndexNow endpoint
-  const sitemap = siteUrl + '/sitemap.xml';
-  const url = `https://searchadvisor.naver.com/indexnow?url=${encodeURIComponent(sitemap)}`;
-  return new Promise((resolve, reject) => {
-    https.get(url, res => resolve({ status: res.statusCode }));
-  });
-}
-
 async function main() {
-  let total = 0;
+  let total = 0, ok = 0, failed = 0;
   for (const site of sites) {
     try {
       const xml = await fetchSitemap(site.sitemap);
       const urls = extractUrls(xml);
       total += urls.length;
 
-      // Bing & Naver direct ping (no key needed)
-      const bing = await pingBing(site.url);
-      const naver = await pingNaver(site.url);
-
-      // IndexNow API (if key is set)
-      let indexnow = null;
-      if (INDEXNOW_KEY) {
-        indexnow = await pingIndexNow(urls, site.url);
-      }
-
-      console.log(`[${site.name}] ${urls.length} URLs | Bing:${bing.status} Naver:${naver.status}${indexnow ? ' IndexNow:'+indexnow.status : ' (no key)'}`);
+      const r = await pingIndexNow(urls, site.url);
+      if (r.status >= 200 && r.status < 300) ok++; else failed++;
+      console.log(`[${site.name}] ${urls.length} URLs | IndexNow:${r.status || 'ERR'} ${r.body || ''}`);
     } catch (e) {
+      failed++;
       console.error(`[${site.name}] FAILED: ${e.message}`);
     }
   }
-  console.log(`\nTotal URLs pinged across ${sites.length} sites: ${total}`);
+  console.log(`\nTotal URLs across ${sites.length} sites: ${total} | submitted OK: ${ok} | failed/skipped: ${failed}`);
 
-  // GitHub Actions output
   if (process.env.GITHUB_OUTPUT) {
     const fs = require('fs');
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `total_urls=${total}\n`);
